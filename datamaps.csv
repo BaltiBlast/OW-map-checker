@@ -1,0 +1,45 @@
+name,screenshot,gamemodes,location,country_code
+Hanamura,https://overfast-api.tekrop.fr/static/maps/hanamura.jpg,"assault",Tokyo, Japan,JP
+Horizon Lunar Colony,https://overfast-api.tekrop.fr/static/maps/horizon.jpg,"assault","Earth's moon",
+Paris,https://overfast-api.tekrop.fr/static/maps/paris.jpg,"assault",Paris, France,FR
+Temple of Anubis,https://overfast-api.tekrop.fr/static/maps/anubis.jpg,"assault",Giza Plateau, Egypt,EG
+Volskaya Industries,https://overfast-api.tekrop.fr/static/maps/volskaya.jpg,"assault",St. Petersburg, Russia,RU
+Ayutthaya,https://overfast-api.tekrop.fr/static/maps/ayutthaya.jpg,"capture-the-flag",Thailand,TH
+Busan,https://overfast-api.tekrop.fr/static/maps/busan.jpg,"control",South Korea,KR
+Nepal,https://overfast-api.tekrop.fr/static/maps/nepal.jpg,"control",Nepal,NP
+Ilios,https://overfast-api.tekrop.fr/static/maps/ilios.jpg,"control",Greece,GR
+Oasis,https://overfast-api.tekrop.fr/static/maps/oasis.jpg,"control",Iraq,IQ
+Lijiang,https://overfast-api.tekrop.fr/static/maps/lijiang.jpg,"control",China,CN
+Guillard,https://overfast-api.tekrop.fr/static/maps/chateau_guillard.jpg,"deathmatch;team-deathmatch",Annecy, France,FR
+Kanezaka,https://overfast-api.tekrop.fr/static/maps/kanezaka.jpg,"deathmatch;team-deathmatch",Tokyo, Japan,JP
+Malevento,https://overfast-api.tekrop.fr/static/maps/malevento.jpg,"deathmatch;team-deathmatch",Italy,IT
+Petra,https://overfast-api.tekrop.fr/static/maps/petra.jpg,"deathmatch;team-deathmatch",Southern Jordan,JO
+Black Forest,https://overfast-api.tekrop.fr/static/maps/black_forest.jpg,"elimination",Germany,DE
+Castillo,https://overfast-api.tekrop.fr/static/maps/castillo.jpg,"elimination",Mexico,MX
+Ecopoint,https://overfast-api.tekrop.fr/static/maps/ecopoint_antarctica.jpg,"elimination",Antarctica,AQ
+Necropolis,https://overfast-api.tekrop.fr/static/maps/necropolis.jpg,"elimination",Egypt,EG
+Circuit Royal,https://overfast-api.tekrop.fr/static/maps/circuit_royal.jpg,"escort",Monte Carlo, Monaco,MC
+Dorado,https://overfast-api.tekrop.fr/static/maps/dorado.jpg,"escort",Mexico,MX
+Route,https://overfast-api.tekrop.fr/static/maps/route_66.jpg,"escort","Albuquerque, New Mexico, United States",US
+Junkertown,https://overfast-api.tekrop.fr/static/maps/junkertown.jpg,"escort",Central Australia,AU
+Rialto,https://overfast-api.tekrop.fr/static/maps/rialto.jpg,"escort",Venice, Italy,IT
+Havana,https://overfast-api.tekrop.fr/static/maps/havana.jpg,"escort",Havana, Cuba,CU
+Gibraltar,https://overfast-api.tekrop.fr/static/maps/gibraltar.jpg,"escort",Gibraltar,GI
+Shambali,https://overfast-api.tekrop.fr/static/maps/shambali.jpg,"escort",Nepal,NP
+Blizzard,https://overfast-api.tekrop.fr/static/maps/blizzard_world.jpg,"hybrid","Irvine, California, United States",US
+Numbani,https://overfast-api.tekrop.fr/static/maps/numbani.jpg,"hybrid","Numbani (near Nigeria)",
+Hollywood,https://overfast-api.tekrop.fr/static/maps/hollywood.jpg,"hybrid","Los Angeles, United States",US
+Eichenwalde,https://overfast-api.tekrop.fr/static/maps/eichenwalde.jpg,"hybrid",Stuttgart, Germany,DE
+Kings Row,https://overfast-api.tekrop.fr/static/maps/kings_row.jpg,"hybrid",London, United Kingdom,UK
+Midtown,https://overfast-api.tekrop.fr/static/maps/midtown.jpg,"hybrid","New York, United States",US
+Paraiso,https://overfast-api.tekrop.fr/static/maps/paraiso.jpg,"hybrid",Rio de Janeiro, Brazil,BR
+Colosseo,https://overfast-api.tekrop.fr/static/maps/colosseo.jpg,"push",Rome, Italy,IT
+Esperansa,https://overfast-api.tekrop.fr/static/maps/esperanca.jpg,"push",Portugal,PT
+Street,https://overfast-api.tekrop.fr/static/maps/new_queen_street.jpg,"push",Toronto, Canada,CA
+Antarctic,https://overfast-api.tekrop.fr/static/maps/antarctic_peninsula.jpg,"control",Antarctica,AQ
+Junk,https://overfast-api.tekrop.fr/static/maps/new_junk_city.jpg,"flashpoint",Central Australia,AU
+Suravasa,https://overfast-api.tekrop.fr/static/maps/suravasa.jpg,"flashpoint",India,IN
+Samoa,https://overfast-api.tekrop.fr/static/maps/samoa.jpg,"control",Samoa,WS
+Runasapi,https://overfast-api.tekrop.fr/static/maps/runasapi.jpg,"push",Peru,PE
+Hanaoka,https://overfast-api.tekrop.fr/static/maps/hanaoka.jpg,"clash",Tokyo, Japan,JP
+Anubis,https://overfast-api.tekrop.fr/static/maps/throne_of_anubis.jpg,"clash",Giza Plateau, Egypt,EG

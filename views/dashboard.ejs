@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Screenshots</title>
+  </head>
+
+  <!-- HTML -->
+  <body>
+    <div class="grid">
+      <% dataMaps.forEach(map => { %>
+      <div>
+        <input type="checkbox" id="<%= map.id %>" name="<%= map.name %>" <%=
+        map.played ? 'checked' : '' %> />
+        <label for="<%= map.id %>"><%= map.name %></label>
+      </div>
+      <% }); %>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      const checkboxes = document.querySelectorAll("input[type=checkbox]");
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", async (event) => {
+          const recordId = event.target.id;
+          const isChecked = event.target.checked;
+
+          const response = await fetch("/update-checkbox", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              recordId: recordId,
+              checkboxFieldName: "played", // Remplacez par le nom de votre champ checkbox
+              isChecked: isChecked,
+            }),
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+          } else {
+            console.error("Failed to update checkbox");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

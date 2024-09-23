@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Overwatch Map Checker</title>
+  </head>
+  <body>
+    <div id="content" class="hidden grid">
+      <% dataMaps.forEach(map => { %>
+      <div class="map <%= map.played ? 'marked' : '' %>">
+        <img src="<%= map.screenshot %>" alt="<%= map.name %>" />
+      </div>
+      <% }); %>
+    </div>
+    <script>
+      function adjustGrid() {
+        const grid = document.querySelector('.grid');
+        const numImages = <%= dataMaps.length %>; // Le nombre total d'images
+
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
+        // Calculer la surface de chaque image en carré
+        const imageSize = Math.floor(Math.sqrt((screenWidth * screenHeight) / numImages));
+
+        // Calculer le nombre de colonnes et de lignes nécessaires
+        const columns = Math.floor(screenWidth / imageSize);
+        const rows = Math.ceil(numImages / columns);
+
+        // Appliquer les styles dynamiques pour les colonnes et les lignes
+        grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+        grid.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+      }
+
+      window.addEventListener('resize', adjustGrid);
+      window.addEventListener('load', adjustGrid);
+
+      window.onload = function() {
+            document.getElementById('content').classList.remove('hidden');
+        };
+    </script>
+  </body>
+</html>
