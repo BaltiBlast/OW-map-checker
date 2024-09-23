@@ -17,7 +17,7 @@ const tableName = process.env.TABLE_NAME;
 
 const base = new Airtable({ apiKey }).base(baseId);
 
-async function fetchRecords() {
+async function getdataMap() {
   const dataMaps = [];
   try {
     const records = await base(tableName).select().all();
@@ -51,7 +51,8 @@ async function updateCheckbox(recordId, checkboxFieldName, isChecked) {
 
 // Route principale
 app.get("/", async (req, res) => {
-  const dataMaps = await fetchRecords();
+  const dataMaps = await getdataMap();
+  dataMaps.sort((a, b) => a.name.localeCompare(b.name));
 
   const numberOfMaps = dataMaps.length;
   const columns = Math.ceil(Math.sqrt(numberOfMaps));
@@ -60,7 +61,9 @@ app.get("/", async (req, res) => {
 
 //------------------------------------------------------------------------------
 app.get("/dashboard", async (req, res) => {
-  const dataMaps = await fetchRecords();
+  const dataMaps = await getdataMap();
+  dataMaps.sort((a, b) => a.name.localeCompare(b.name));
+
   res.render("dashboard", { dataMaps, apiKey, baseId, tableName });
 });
 
